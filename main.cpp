@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-void scale_vector(std::vector<float>&values);
+void scale(std::vector<float>&values, float b);
 void print_vector(const std::vector<float>& values);
 
 int main() {
@@ -22,10 +22,11 @@ int main() {
     std::cout << '\n';
 }
 
-void scale_vector(std::vector<float>&values, int) {
-  for (int i = 0; ii < values.size() - 1; i++) {
-    vector[i] = vector[i] * int;
+void scale(std::vector<float>&values, float b) {
+  for (int i = 0; i < values.size(); i++) {
+    values[i] = values[i] * b;
   }
+}
 void print_vector(const std::vector<float>& values) {
     std::cout << "{";
     for (int i = 0; i < values.size() - 1; i++) {
